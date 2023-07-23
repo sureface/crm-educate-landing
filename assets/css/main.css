@@ -1,0 +1,39 @@
+@import url('/assets/css/colors.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header-container {
+    max-width: 1672px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#header {
+    background-color: var(--light-blue);
+    height: 100vh;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 63px;
+}
+.nav-bar_ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-bar_links {
+    padding: 20px;
+    font-size: 1.563rem;
+    color: var(--light-black);
+    text-transform: capitalize;
+}
