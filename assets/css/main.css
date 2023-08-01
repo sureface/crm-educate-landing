@@ -8,7 +8,15 @@
     list-style: none;
 }
 .navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--tin-light-blue);
+    z-index: 99;
+}
+body.fixed-header .navbar {
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.161);
 }
 .nav-link {
     color: var(--light-black);
@@ -32,6 +40,7 @@
 #header {
     height: calc(100vh - 86px);
     padding-top: 60px;
+    margin-top: 86px;
 }
 .bg-blue {
     background-color: var(--tin-light-blue);
@@ -391,4 +400,17 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 35px;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+   
+body::-webkit-scrollbar-track {
+    border: 2px solid white;
+    background-color: var(--tin-light-blue);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: var(--blue);
+border-radius: 10px;
 }

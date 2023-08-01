@@ -1,6 +1,11 @@
-const navBtn = document.querySelector('.navBar-drawer')
-const navBar = document.querySelector('.navBar');
-const openDrawer = document.querySelector('.drawer-navigation')
+const loader = document.querySelector('.loader');
+const roller = document.querySelector('.lds-roller');
+
+const removePreloader = () => preloader.remove();
+  let preloader = loader
+  if (preloader) {
+    window.addEventListener("load", () => setTimeout(removePreloader, 500));
+}
 
 addEventListener('scroll', function() {
     if(this.window.scrollY >= 20) {
@@ -9,7 +14,3 @@ addEventListener('scroll', function() {
         document.body.classList.remove('fixed-header')
     }
 })
-
-const openDrawerNav = () => {
-    openDrawer.classList.toggle('open-drawer')
-}
