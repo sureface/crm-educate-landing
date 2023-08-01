@@ -7,91 +7,402 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class=""> 
-        
-        <nav class="navBar">
-            <a href="#">
-                <img src="./assets/icons/mobile-logo.svg" alt="err">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="./assets/icons/logo.svg" alt="err">
             </a>
-            <div class="drawer-navigation">
-                <div class="drawer-closer" onclick="openDrawerNav()">
-                    <img src="assets/icons/x.svg" alt="err">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <ul class="navbar-nav ms-lg-auto mb-lg-0 ">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">teachers</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">studients</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">documents</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="header" class="bg-blue">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="header-title">
+                        EduSmart CRM 一 O'quv markazlar va maktablarni aqlli boshqarish tizimi
+                    </div>
+                    <div class="header-text">
+                        O'quv markazingizni dunyoning ixtiyoriy nuqtasidan boshqaring!
+                    </div>
+                    <button type="btn" class="header-btn">kirish</button>
                 </div>
-                <div class="drawer-lang__wrapper">
-                    <div class="dropdown drawer-lang">
-                        <div class="lang-flag">
-                            <img src="assets/icons/usa-flag.svg" alt="err">
+                <div class="col">
+                    <img src="assets/img/header-image.png" alt="err" class="w-100">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <div class="container">
+            <div class="main-header">O’zgarishlarga tayyormisiz?</div>
+            <div class="main-description">
+                Eskicha boshqaruvdan voz kechish vaqti keldi. Endi siz emas kompyuterlar ishlaydi.
+            </div>
+            <div class="row g-5">
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-1.svg" alt="err">
+                    <div class="main-box_title">
+                        Markazlashtirilgan boshqaruv
+                    </div>
+                    <div class="main-box_text">
+                        Barcha o'quvchilar, xodimlar, o'quv jarayoni bilan bog'liq bo'lgan barcha ma'lumotlar yagona elektron bazada
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-2.svg" alt="err">
+                    <div class="main-box_title">
+                        Avtomatlashtirilganhisob-kitob
+                    </div>
+                    <div class="main-box_text">
+                        Barcha to'lovlar, qarzdorliklar, o'qituvchilarning oylik maoshlari va chiqimlarni avtomatik hisoblash
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-3.svg" alt="err">
+                    <div class="main-box_title">
+                        Statistik ma'lumotlar diagrammasi
+                    </div>
+                    <div class="main-box_text">
+                        Kunlik qabul, umumiy o'quvchilar soni, oylik tushum va qarzdorliklarni statistik diagrammalar asosida ko'rish
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-4.svg" alt="err">
+                    <div class="main-box_title">
+                        Intellektual dars jadvali
+                    </div>
+                    <div class="main-box_text">
+                        Aqlli dars jadvali yordamida dars soatlarini to'g'ri taqsimlash va ularga mos xonalarni aniq belgilash imkoniyati
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-5.svg" alt="err">
+                    <div class="main-box_title">
+                        Elektron davomat tizimi
+                    </div>
+                    <div class="main-box_text">
+                        O'quvchilarni dars jarayonlariga qatnashishlarini doimiy belgilab borish hamda hisobotlarni shakllantirish
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-6.svg" alt="err">
+                    <div class="main-box_title">
+                        O'quvchilar bilimini baholash
+                    </div>
+                    <div class="main-box_text">
+                        Fanlar bo'yicha rejali imtihonlar tashkillashtirish, imtihon natijalarini avtomatik hisoblash va tartiblash
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-7.svg" alt="err">
+                    <div class="main-box_title">
+                        Topshiriqlar (menejer) kalendari
+                    </div>
+                    <div class="main-box_text">
+                        Rahbar yoki menejer tomonidan o'qituvchi va xodimlarga muddatli topshiriqlar berish va bajarilishini nazorat qilish
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-8.svg" alt="err">
+                    <div class="main-box_title">
+                        SMS xabarnomalar
+                    </div>
+                    <div class="main-box_text">
+                        O'quvchilarga oylik to'lovlar, qarzdorlik, imtihon natijalari, tug'ilgan kun va bayramlarda sms xabarnomalar yuborish
+                    </div>
+                </div>
+                <div class="main-box col-4">
+                    <img src="./assets/icons/section-icon-9.svg" alt="err">
+                    <div class="main-box_title">
+                        Telegram bot orqali muloqot
+                    </div>
+                    <div class="main-box_text">
+                        Yangi tashkil etilgan o'quv kurslari, O'quvchilar davomati va boshqa yangiliklarni telegram bot orqali yuborish
+                    </div>
+                </div>
+        </div>
+    </main>
+    <section id="section" class="bg-blue">
+        <div class="container-fluid">
+            <div class="section-mobile">
+                <div class="section-left">
+                    <div class="section-title">Siz uchun!</div>
+                    <div class="section-description">Edu-Smart mobil ilovasi: endi o'quv markazingiz sizning smartfoningizda.</div>
+                    <div class="section-icon">
+                        <img src="assets/icons/google-play.svg" alt="err">
+                    </div>
+                </div>
+                <div class="section-right">
+                    <div class="section-mobile_pic">
+                        <img src="./assets/img/google-play-phones.png" alt="err">
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="why-we">
+            <div class="why-we__title">Nega aynan biz ?</div>
+            <div class="container">
+                <div class="why-we__wrapper">
+                    <div class="why-we__left">
+                        <div class="d-flex why-we__box">
+                            <div class="why-we__count">01</div>
+                            <div class="why-we__item">
+                                <div class="why-we__item-title">Ishonchli xavfsizlik siyosati</div>
+                                <div class="why-we__item-text">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
                         </div>
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ENG
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">ENG</a></li>
-                            <li><a class="dropdown-item" href="#">RU</a></li>
-                            <li><a class="dropdown-item" href="#">UZ</a></li>
+                        <div class="d-flex why-we__box">
+                            <div class="why-we__count">01</div>
+                            <div class="why-we__item">
+                                <div class="why-we__item-title">Ishonchli xavfsizlik siyosati</div>
+                                <div class="why-we__item-text">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="d-flex why-we__box">
+                            <div class="why-we__count">01</div>
+                            <div class="why-we__item">
+                                <div class="why-we__item-title">Ishonchli xavfsizlik siyosati</div>
+                                <div class="why-we__item-text">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="d-flex why-we__box">
+                            <div class="why-we__count">01</div>
+                            <div class="why-we__item">
+                                <div class="why-we__item-title">Ishonchli xavfsizlik siyosati</div>
+                                <div class="why-we__item-text">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-we__right">
+                        <img src="./assets/img/why-we.png" alt="err">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="crmTg-bot">
+                <div class="col">
+                    <div class="crmTg-bot__title">Telegram bot</div>
+                    <div class="crmTg-bot__text">
+                        Lorem ipsum dolor sit amet consectetur. Etiam risus magnis in sed quis at sapien ut. Sed vestibulum auctor eget vitae fermentum nulla sed.
+                    </div>
+                </div>
+                <div class="col crmTg-bot__img">
+                    <img src="./assets/img/tg-bot.png" alt="err">
+                </div>
+            </div>
+        </div>
+        <div class="crm-offers">
+            <div class="container">
+                <div class="row crm-offers__wrapper">
+                    <div class="col">
+                        <div class="crm-offers__header">
+                            <div class="crm-offers__title">Oylik shartnoma</div>
+                            <button type="button" class="crm-offers__btn">400 000 so’m</button>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">30 kun bepul</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Cheklanmagan foydalanuvchilar</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Tizimni sizning qoidalaringiz bo'yicha sozlash</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Tizimni sizning qoidalaringiz bo'yicha sozlash</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Doimiy texnik xizmat</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Bepul trening darslar</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Mobil ilovadan foydalanish</div>
+                        </div> 
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Telegram bot xizmati</div>
+                        </div> 
+                    </div>
+                    <div class="col">
+                        <div class="crm-offers__header">
+                            <div class="crm-offers__title">Yillik shartnoma</div>
+                            <button type="button" class="crm-offers__btn">
+                                3 840 000 so’m
+                                <img src="./assets/icons/discount.svg" alt="err" class="crm-offers__discount">
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">30 kun bepul;</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Cheklanmagan foydalanuvchilar</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">500 ta SMS paket</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Tizimni sizning qoidalaringiz bo'yicha sozlash</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Yangi versiyalardan foydalanish;</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Doimiy texnik xizmat</div>
+                        </div>
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Bepul trening darslar</div>
+                        </div> 
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Mobil ilovadan foydalanish</div>
+                        </div> 
+                        <div class="d-flex align-items-center crm-offers__body">
+                            <div class="crm-offers__check">
+                                <img src="./assets/icons/check-box.svg" alt="err">
+                            </div>
+                            <div class="crm-offers__plans">Telegram bot xizmati</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 d-flex flex-column align-items-center">
+                    <a href="#" class="footer-logo">
+                        <img src="./assets/icons/logo-white.svg" alt="err">
+                    </a>
+                    <div class="footer-heading">
+                        O’quv markazlar va maktablarni aqilli boshqarish tizimi
+                    </div>
+                    <div class="footer-brandName">Edusmart2022 </div>
+                </div>
+                <div class="col-5">
+                    <div class="d-flex gap-5">
+                        <ul class="col m-0 p-0">
+                            <li class="footer-usefulLinks__title">Kompaniya</li>
+    
+                            <li class="footer-usefulLinks__item">
+                                <a href="#" class="footer-usefulLinks__link">Biz haqimizda</a>
+                            </li>
+                            <li class="footer-usefulLinks__item">
+                                <a href="#" class="footer-usefulLinks__link">Yangiliklar</a>
+                            </li>
+                            <li class="footer-usefulLinks__item">
+                                <a href="#" class="footer-usefulLinks__link">Shartnoma</a>
+                            </li>
+                            <li class="footer-usefulLinks__item">
+                                <a href="#" class="footer-usefulLinks__link">Mutaxassislar yordami</a>
+                            </li>
+                        </ul>
+                        <ul class="col m-0 p-0">
+                            <li class="footer-usefulLinks__title">Murojaat uchun</li>
+    
+                            <li class="d-flex align-items-center footer-usefulLinks__item">
+                                <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i>
+                                <a href="tel:+998997971545" class="footer-usefulLinks__link ms-3">(406) 555-0120</a>
+                            </li>
+                            <li class="d-flex align-items-center footer-usefulLinks__item">
+                                <i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i>
+                                <a href="mailto:mangcoding123@gmail.com" class="footer-usefulLinks__link ms-3">mangcoding123@gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center footer-usefulLinks__item">
+                                <i class="fa-solid fa-location-dot fa-xl me-2" style="color: #ffffff;"></i>
+                                <a href="#" class="footer-usefulLinks__link ms-3 text-break">"Turon Information Technology Group" Toshkent shahar Yunusobod tumani15 - mavze 42A-uy</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                
-                <ul class="drawer-ltem">
-                    <li>
-                        <a href="#" class="drawer-links active">home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer-links">teachers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer-links">about</a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer-links">faq</a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer-links">contact</a>
-                    </li>
-                </ul>
-                <div class="drawer-social__links">
-                    <a href="#">
-                        <img src="assets/icons/facebook.svg" alt="err">
-                    </a>
-                    <a href="#">
-                        <img src="assets/icons/Twitter.svg" alt="err">
-                    </a>
-                    <a href="#">
-                        <img src="assets/icons/instagram.svg" alt="err">
-                    </a>
-                    <a href="#">
-                        <img src="assets/icons/linkedin.svg" alt="err">
-                    </a>
+                <div class="col-2">
+                    <div class="footer-socialMedia text-center">Ijtimoiy tarmoqlar</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="footer-socialMedia__links me-3"><img src="./assets/icons/facebook.svg" alt="err"></a>
+                        <a href="#" class="footer-socialMedia__links me-3"><img src="./assets/icons/Twitter.svg" alt="err"></a>
+                        <a href="#" class="footer-socialMedia__links me-3"><img src="./assets/icons/linkedin.svg" alt="err"></a>
+                        <a href="#" class="footer-socialMedia__links"><img src="./assets/icons/instagram.svg" alt="err"></a>
+                    </div>
                 </div>
             </div>
-            <button class="navBar-drawer" onclick="openDrawerNav()">
-                <img src="assets/icons/bar.svg" alt="err">
-            </button>
-        </nav>
-        <!-- <div class="header-body">
-            <div class="header-left">
-                <div class="header-heading">
-                    EduSmart CRM 一 O'quv markazlar va maktablarni aqlli boshqarish tizimi
-                </div>
-                <div class="header-text">
-                    O'quv markazingizni dunyoning ixtiyoriy nuqtasidan boshqaring!
-                </div>
-                <button type="button" class="header-btn">kirish</button>
-            </div>
-            <div class="header-right">
-                <img src="./assets/img/header-image.png" alt="err">
-            </div>
-        </div> -->
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, natus earum. Neque omnis vero distinctio doloribus minus? Esse accusamus minima quibusdam iste dolore, non quo corrupti sint facere sequi velit a, provident alias voluptatem ratione reiciendis, ex eius. Velit minus quia dignissimos assumenda ad, nesciunt nobis vel, veritatis soluta et, quaerat fugiat officiis aperiam tempora necessitatibus neque fugit corrupti? Beatae alias cum modi dolore sint eveniet molestiae, possimus, nobis laudantium quaerat asperiores maxime a. Modi praesentium suscipit minus, facilis aspernatur esse iusto possimus, officiis necessitatibus mollitia enim non debitis! Consequuntur ad, odio error similique magnam officiis vel reprehenderit blanditiis cumque repellendus. Laboriosam quo dicta sint, rem id ad maiores quos temporibus porro veniam, tempore quam tenetur eligendi pariatur accusantium debitis. Illo, eos? Possimus, asperiores? Qui, neque. Laborum minima aspernatur illum neque, in doloremque doloribus, animi perspiciatis voluptatibus praesentium, atque soluta officia nisi incidunt optio? Molestiae dolores atque, eligendi voluptatum tempora officiis deleniti alias veniam deserunt debitis excepturi sunt modi distinctio ducimus nisi. Atque facilis, tempore totam temporibus impedit architecto quo harum ad accusantium sapiente! Non ipsa rem obcaecati quidem impedit sunt esse reprehenderit fugiat error velit assumenda earum cupiditate, deleniti consectetur excepturi optio odit corrupti, provident quasi aliquam laborum dolorem placeat. Recusandae quidem ullam, ducimus quia tenetur ipsum porro quis id exercitationem omnis cupiditate sequi inventore natus dolorum eius est voluptatem similique neque rerum totam quam mollitia accusamus quasi molestiae. Dolorum dolor inventore voluptates magnam tenetur, nesciunt, consequuntur fugit vel a et at, alias ea soluta debitis obcaecati in. Odio voluptas illo accusamus porro eum asperiores consectetur sit voluptates dolorum molestias nostrum ut odit, expedita et eius voluptatem doloremque officiis optio facilis sequi? Vel iste debitis qui quae magnam excepturi dolorum aliquid repudiandae eaque error illum, accusamus autem repellat voluptatum voluptates animi ducimus nemo sapiente placeat eveniet, similique labore. Magnam explicabo minima quod officiis obcaecati a, fugiat eveniet? Hic alias consectetur et obcaecati, quasi unde vel. Neque doloribus sint iste iusto harum quibusdam explicabo sapiente qui quidem, cupiditate cumque laudantium sit fugit mollitia nemo aut aliquid consequuntur itaque perspiciatis impedit aspernatur eligendi molestiae! Error sit nostrum nobis, quisquam quaerat cupiditate atque optio rerum officia corporis facere quas aut maiores voluptatem quibusdam incidunt hic necessitatibus. Adipisci, minima eum sed placeat, fuga alias quod quia tempora rerum sapiente blanditiis aliquam dolore ullam dolorem necessitatibus repudiandae, voluptatum animi vel velit libero. Nemo in nam explicabo pariatur suscipit, tempora aspernatur dolorum velit qui placeat ipsam, maxime eos nisi tempore id. Voluptatum eligendi aut nemo modi nulla temporibus eum fugit, facere ipsam excepturi consequatur repellat tempora, cum animi. Repellat iure modi earum sapiente nobis vel, maiores adipisci repudiandae harum, iste vitae? Quae, deserunt magni ullam minima quos est quisquam sed ex suscipit reiciendis dignissimos? Maiores quae dolor provident sint obcaecati sequi dolores vitae odio voluptatem rem, nam incidunt ipsum ratione natus quia voluptate quis facere iste dolorum hic eius? Quam corporis nobis doloribus, omnis at, voluptatem doloremque aperiam unde neque qui mollitia laudantium ab nisi sit similique voluptas illum ducimus, cumque maiores iste quo perferendis? Facilis voluptatibus distinctio ex illo eaque atque modi aspernatur ut, quo dolorum suscipit mollitia iste quaerat? Recusandae veniam reprehenderit maxime aspernatur modi impedit reiciendis natus inventore, eveniet culpa non ut laudantium adipisci dolorem a distinctio voluptates asperiores molestias quasi, ea, quia labore nulla iste? Placeat harum delectus accusantium voluptatum. Alias dolorem, voluptas doloremque laudantium aut sunt quo ipsa voluptatum ut sed quasi beatae exercitationem nesciunt, voluptates voluptatibus blanditiis nobis pariatur vero perferendis illo? Accusantium sunt odit delectus nam dolorum reprehenderit omnis quasi illum quidem soluta obcaecati possimus quia consectetur molestias consequuntur beatae dolores, sit aspernatur vitae quos, error iste voluptate laborum? Architecto culpa excepturi illum id tempore veritatis, quaerat reprehenderit ex corrupti atque fugiat fugit autem recusandae sequi, quos sint, vitae blanditiis cum doloremque maiores aliquid maxime? Consequatur rerum exercitationem saepe, harum hic nulla deserunt porro sed expedita cupiditate culpa labore nobis natus animi voluptate provident libero consequuntur aliquid fuga nesciunt. Corrupti odit itaque repellendus quis nemo impedit quas laudantium, velit fugit est error ab pariatur harum minima dolor laborum soluta possimus voluptatum deleniti molestiae reprehenderit esse quam eum. Perferendis praesentium id ab expedita iure reiciendis quasi tempora molestias? Laborum, laudantium nobis! Voluptatem aperiam tempore optio nihil autem voluptas, unde obcaecati repudiandae odit, dolor illum nam? Neque provident cumque, aut vero nostrum deleniti quibusdam? Amet odio, quod, accusantium eligendi adipisci cumque iste esse deleniti exercitationem itaque vero nulla incidunt sunt voluptates, fugiat voluptatem veniam labore? Libero placeat sequi totam quod quasi necessitatibus recusandae sit rerum similique. Reprehenderit amet numquam iste doloremque veritatis! Quaerat odit voluptas non obcaecati nostrum eveniet aliquid nesciunt nobis numquam quos vitae unde animi amet nam deserunt ut placeat magni eaque voluptate qui voluptatum, et facilis. Quis veniam ab sit dolores voluptate corporis in eveniet eligendi porro ratione doloribus minima deleniti voluptatibus iusto, fuga vitae modi saepe debitis natus deserunt aliquid? Provident consequuntur vero pariatur eos aliquid porro, tempora sed veritatis commodi ipsum adipisci iure sapiente esse similique cumque eligendi numquam qui ullam. Non cumque facere natus. Quod quaerat, animi quos ut nam harum molestiae! Ducimus placeat tempora aperiam inventore eos sequi iusto itaque sapiente impedit, deserunt distinctio possimus amet dolor. Laboriosam laborum, ipsum sit fuga officia corrupti molestiae, cupiditate quia quae blanditiis tenetur magnam quas accusantium! Pariatur delectus beatae itaque neque, dolorem nostrum exercitationem? Dolore nesciunt veritatis perspiciatis maxime, laborum dicta suscipit quam, repellendus porro nam odio. Quis qui quidem dolore voluptate, unde tempora sint ipsa totam, assumenda possimus eum, quaerat officia dolor alias mollitia eveniet neque nesciunt omnis iste magni dolorem? Possimus repudiandae ex atque quo nobis eum. Facere ipsam rerum doloribus molestias fugiat totam voluptatem architecto culpa ipsum molestiae vero dicta officiis cum praesentium illum repudiandae at laboriosam repellat reprehenderit commodi nemo consectetur id, mollitia fugit? Blanditiis labore rerum provident iusto eveniet fugiat impedit quidem corporis tempora. Odio aliquid maiores voluptas laboriosam amet distinctio praesentium doloribus adipisci cum non, numquam enim placeat tempore quia quaerat voluptates laudantium nemo? Nihil, ipsam dolorum quos, rem autem expedita a nemo perspiciatis vitae, id quisquam illo rerum ipsum?
-        </p>
-    </div>
-
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
