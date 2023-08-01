@@ -41,6 +41,7 @@ body.fixed-header .navbar {
     height: calc(100vh - 86px);
     padding-top: 60px;
     margin-top: 86px;
+    overflow: hidden;
 }
 .bg-blue {
     background-color: var(--tin-light-blue);
@@ -411,6 +412,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: var(--blue);
-border-radius: 10px;
+    background-color: var(--blue);
+    border-radius: 10px;
 }

@@ -1,5 +1,17 @@
 const loader = document.querySelector('.loader');
-const roller = document.querySelector('.lds-roller');
+let mainHeader = document.querySelector('.main-header')
+
+window.onscroll = () => {
+    let top = window.scrollY;
+    let offset = main.offsetTop - 400;
+    let height = main.offsetHeight;
+
+    if(top >= offset && top < offset + height) {
+        main.classList.add('animate__animated')
+    } else {
+        main.classList.remove('animate__animated')
+    }
+}
 
 const removePreloader = () => preloader.remove();
   let preloader = loader
@@ -14,3 +26,5 @@ addEventListener('scroll', function() {
         document.body.classList.remove('fixed-header')
     }
 })
+
+
