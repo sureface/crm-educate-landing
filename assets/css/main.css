@@ -421,6 +421,7 @@ body.fixed-header .navbar {
     border-radius: 50%;
     background-color: var(--blue);
     cursor: pointer;
+    z-index: 9999;
 }
 .footer-socialMedia__links {
     transition: .3s ease;
